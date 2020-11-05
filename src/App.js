@@ -1,8 +1,8 @@
 import './App.css';
-import Header from './Header/Header';
-import H from './Header/Header.module.css'
-import Sign from './Sign/Sign';
-import CenterTitle from './CenterTitle/CenterTitle';
+import Header from './Components/Welcome/Header/Header';
+import H from './Components/Header/Header.module.css'
+import CenterTitle from './Components/Welcome/CenterTitle/CenterTitle';
+import Sign from './Components/Welcome/Sign/Sign';
 function App() {
   return (
     <div className="App__bg">
