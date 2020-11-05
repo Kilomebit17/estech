@@ -12,6 +12,7 @@ function App() {
       </div>
       <div className="App__center">
         <CenterTitle />
+        <CenterTitle />
       </div>
     </div>
   );
