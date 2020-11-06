@@ -1,5 +1,10 @@
-.content {
+.profile__width {
     width: 21%;
     height: 100vh;
     border-right: 1px solid #e0e4e9;
+}
+.profile {
+    display: flex;
+    align-items: center;
+    padding:15px 20px;
 }

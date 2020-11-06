@@ -8,7 +8,7 @@ import ProfileCss from './Components/App/Profile/Profile.module.css'
 const App = () => {
     return (
         <div className="App">
-            <div className={ProfileCss.content}>
+            <div className={ProfileCss.profile__width}>
                 <Header />
                 <Profile />
             </div>
