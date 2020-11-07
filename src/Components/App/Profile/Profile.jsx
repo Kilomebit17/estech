@@ -6,8 +6,8 @@ import Messages from './Messages/Messages'
 const Profile = () => {
     return (
         <div className={ProfileCss.profile}>
-            <Couples title="Пары"/>
-            <Messages title="Сообщения"/>
+            <Couples />
+            <Messages />
         </div>
     )
 }

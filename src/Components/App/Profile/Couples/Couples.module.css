@@ -7,3 +7,7 @@
     cursor: pointer;
     font-family: 'Nanum Gothic', sans-serif;
 }
+.Couples__title a.active {
+    padding-bottom: 3px;
+    border-bottom: 3px solid#fb4a54;
+}

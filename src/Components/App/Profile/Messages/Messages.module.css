@@ -6,3 +6,7 @@
     padding:0 10px;
     font-family: 'Nanum Gothic', sans-serif;
 }
+.title a.active {
+    padding-bottom: 3px;
+    border-bottom: 3px solid#fb4a54;
+}
