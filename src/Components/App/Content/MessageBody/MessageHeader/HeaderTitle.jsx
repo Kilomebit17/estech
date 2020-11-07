@@ -1,8 +1,8 @@
 import React from 'react'
 import HeaderTitleCss from './HeaderTitle.module.css'
-const HeaderTitle = () => {
+const HeaderTitle = (props) => {
     return (
-        <div className={HeaderTitleCss}></div>
+    <div className={HeaderTitleCss.title}>{props.title}</div>
     )
 }
 export default HeaderTitle;

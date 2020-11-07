@@ -5,10 +5,10 @@ import HeaderImg from './HeaderImg'
 import HeaderTitle from './HeaderTitle'
 const Header = () => {
     return (
-        <div>
+        <div className={HeaderCss.Header}>
             <div className={HeaderCss.header__inner}>
                 <HeaderImg />
-                <HeaderTitle />
+                <HeaderTitle  title='Вы и Даша образовали пару 06.11.2020'/>
             </div>
             <div className={HeaderCss.nav}>
                 <HeaderClose />
