@@ -2,6 +2,7 @@
     font-weight: 600;
     font-size: .9rem;
     color: #2c2c2c;
+    cursor: pointer;
     padding:0 10px;
     font-family: 'Nanum Gothic', sans-serif;
 }
