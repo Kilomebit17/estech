@@ -12,7 +12,7 @@ const App = () => {
                 <Header />
                 <Profile />
             </div>
-            <Content /> 
+                <Content /> 
         </div>
     )
 }

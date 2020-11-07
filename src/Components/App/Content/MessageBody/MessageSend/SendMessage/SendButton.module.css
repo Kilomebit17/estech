@@ -1,0 +1,13 @@
+.btn {
+    padding:10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #e6e9ed;
+    border-radius: 20px;
+    font-family: "Nanum Gothic", sans-serif;
+    cursor: pointer;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    text-transform: uppercase;
+}

@@ -1,0 +1,10 @@
+.textarea {
+    min-width: 400px;
+    /* max-width: 400px; */
+    font-family: 'Nanum Gothic', sans-serif;
+    outline: none;
+    border: none;
+    padding:8px;    
+    resize: none;
+    font-size:1.1rem;
+}
