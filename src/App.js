@@ -14,7 +14,7 @@ const App = () => {
                     <Header />
                     <Profile />
                 </div>
-                <Route path='/messages' component={Content} />
+                <Route path='/messages/people' component={Content} />
             </div>
         </BrowserRouter>
     )
