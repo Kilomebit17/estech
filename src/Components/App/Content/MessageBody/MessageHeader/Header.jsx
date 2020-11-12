@@ -8,7 +8,7 @@ const Header = () => {
         <div className={HeaderCss.Header}>
             <div className={HeaderCss.header__inner}>
                 <HeaderImg />
-                <HeaderTitle title='Вы и мамка кочи образовали пару 06.11.2020' />
+                <HeaderTitle title='Вы и username образовали пару 06.11.2020' />
             </div>
             <div className={HeaderCss.nav}>
                 <HeaderClose />
