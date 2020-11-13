@@ -14,3 +14,6 @@
     border-right: 4px solid #fd5068;
     box-shadow: 0 0 15px 0 hsla(0,0%,50.6%,.22);
 }
+.link {
+    cursor: pointer;
+}

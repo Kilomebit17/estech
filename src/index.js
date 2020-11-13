@@ -4,10 +4,10 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 // import Welcome from './Welcome';
-
+import state from './Redux/state'
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App state={state}/>
   </React.StrictMode>,
   document.getElementById('root')
 );

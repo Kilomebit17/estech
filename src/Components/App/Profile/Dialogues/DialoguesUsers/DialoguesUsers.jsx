@@ -5,7 +5,7 @@ import UserPhoto from './UserPhoto/UserPhoto'
 
 const DialoguesUsers = (props) => {
     return (
-        <NavLink to={"/messages/people/" + props.id}>
+        <NavLink to={"/messages/people/" + props.id} className={DialoguesUsersCss.link}>
             <div className={DialoguesUsersCss.content}>
                 <UserPhoto />
                 <span className={DialoguesUsersCss.dialog}>{props.title}</span>
