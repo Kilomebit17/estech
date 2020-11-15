@@ -7,6 +7,7 @@ import Content from './Components/App/Content/Content';
 import { Route, BrowserRouter } from 'react-router-dom';
 import MyProfile from './Components/App/MyProfile/MyProfile';
 const App = (props) => {
+    
     return (
         <BrowserRouter>
             <div className="App">
