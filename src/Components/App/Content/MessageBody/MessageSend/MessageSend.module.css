@@ -9,6 +9,7 @@
 }
 .send__info {
     display: flex;
+    width: 100%;
 }
 .send {
     display: flex;

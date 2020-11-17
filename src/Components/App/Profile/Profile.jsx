@@ -12,7 +12,8 @@ const Profile = (props) => {
                 <Header />
                 <Select />
             </div>
-            <Route path='/messages' render={() => <Dialogues messages={props.messages} />} />
+            <Route path='/messages' render={() => <Dialogues messages={props.messages}
+                addMessage={props.message} />} />
         </div>
     )
 }

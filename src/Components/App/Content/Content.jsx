@@ -1,10 +1,10 @@
 import React from 'react'
 import MSContent from './MessageBody/MSContent'
 import ContentCss from './Content.module.css'
-const Content = () => {
+const Content = (props) => {
     return (
             <div className={ContentCss.content}>
-                <MSContent />
+                <MSContent addMessage={props.addMessage}/>
             </div>
     )
 }

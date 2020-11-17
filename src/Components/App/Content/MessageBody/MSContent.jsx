@@ -4,12 +4,12 @@ import MessageContent from './MessageContent/MessageContent'
 import MessageSend from './MessageSend/MessageSend'
 import MSContentCss from './MSContent.module.css'
 
-const MSContent = () => {
+const MSContent = (props) => {
     return (
         <div className={MSContentCss.content}>
             <Header />
             <MessageContent />
-            <MessageSend />
+            <MessageSend addMessage={props.addMessage}/>
         </div>
     )
 }

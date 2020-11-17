@@ -4,20 +4,14 @@ import SendGif from './SendInfo/SendGif'
 import SendMusic from './SendInfo/SendMusic'
 import SendInfo from './SendInfo/SendInfo'
 import SendArea from './SendMessage/SendArea'
-import SendEmoji from './SendMessage/SendEmoji'
-import SendBtn from './SendMessage/SendButton'
-const MessageSend = () => {
+const MessageSend = (props) => {
     return (
         <div className={MessageSendCss.content}>
             <div className={MessageSendCss.send__info}>
                 <SendGif />
                 <SendMusic />
                 <SendInfo />
-                <SendArea />
-            </div>
-            <div className={MessageSendCss.send}>
-                <SendEmoji />
-                <SendBtn />
+                <SendArea addMessage={props.addMessage}/>
             </div>
         </div>
     )
