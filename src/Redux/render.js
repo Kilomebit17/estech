@@ -3,12 +3,11 @@ import ReactDOM from 'react-dom';
 import '../index.css';
 import reportWebVitals from '../reportWebVitals';
 import App from '../App';
-// import Welcome from './Welcome';
 
-export const renderEntireTree = (state, { addMessage }) => {
+export const renderEntireTree = (state, { addMessage, changeMessage}) => { // принимаем все из index.js
     ReactDOM.render(
         <React.StrictMode>
-            <App state={state} addMessage={addMessage} />
+        <App state={state} addMessage={addMessage} changeMessage={changeMessage}/> 
         </React.StrictMode>,
         document.getElementById('root')
     );

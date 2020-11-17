@@ -9,7 +9,7 @@ const MSContent = (props) => {
         <div className={MSContentCss.content}>
             <Header />
             <MessageContent />
-            <MessageSend addMessage={props.addMessage}/>
+            <MessageSend addMessage={props.addMessage} changeMessage={props.changeMessage} MessagesContent={props.MessagesContent}/>
         </div>
     )
 }

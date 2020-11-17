@@ -7,7 +7,6 @@ import Content from './Components/App/Content/Content';
 import { Route, BrowserRouter } from 'react-router-dom';
 import MyProfile from './Components/App/MyProfile/MyProfile';
 const App = (props) => {
-    debugger;
     return (
         <BrowserRouter>
             <div className="App">
@@ -15,7 +14,7 @@ const App = (props) => {
                     <Route render={() => <Profile messages={props.state.messagesPage.messagesPeople} />} />
                     <Route path='/profile' render={() => <MyProfile />} />
                 </div>
-                <Route path='/messages/people' render={() => <Content addMessage={props.addMessage} />} />
+                <Route path='/messages/people' render={() => <Content addMessage={props.addMessage} changeMessage={props.changeMessage} MessagesContent={props.state.MessagesContent.messagesValue} />} />
             </div>
         </BrowserRouter>
     )

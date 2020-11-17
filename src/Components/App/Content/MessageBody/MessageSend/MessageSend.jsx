@@ -11,7 +11,7 @@ const MessageSend = (props) => {
                 <SendGif />
                 <SendMusic />
                 <SendInfo />
-                <SendArea addMessage={props.addMessage}/>
+                <SendArea addMessage={props.addMessage} changeMessage={props.changeMessage} MessagesContent={props.MessagesContent}/>
             </div>
         </div>
     )
