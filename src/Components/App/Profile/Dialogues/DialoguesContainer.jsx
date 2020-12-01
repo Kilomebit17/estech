@@ -1,12 +1,10 @@
-import React from 'react'
-import DialoguesCss from './Dialogues.module.css'
-import DialoguesUsers from './DialoguesUsers/DialoguesUsers'
-const Dialogues = (props) => {
-    const dialog = props.messages.map(dialog => <DialoguesUsers title={dialog.name} id={dialog.id} />)
-    return (
-        <div className={DialoguesCss.content}>
-            {dialog}
-        </div>
-    )
+import {connect} from "react-redux";
+import Dialogues from "./Dialogues";
+
+const mapStateToProps = (state) => {
+    return {
+        messagesPeople: state.messagesPage.messagesPeople
+    }
 }
-export default Dialogues;
+const DialoguesContainer = connect(mapStateToProps)(Dialogues)
+export default DialoguesContainer;

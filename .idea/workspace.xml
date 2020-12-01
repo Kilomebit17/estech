@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="1f446376-3c01-4d71-a051-e2a846eafe37" name="Default Changelist" comment="create render and does something with props">
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MessageContent/MessageContentContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MessageSend/SendMessage/SendAreaContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Profile/Dialogues/DialoguesContainer.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/ContentReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/PageReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/ReduxStore.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Redux/store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/StoreContext.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Content/Content.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Content/Content.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MSContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MSContent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MessageContent/MessageContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MessageContent/MessageContent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MessageContent/MessageContent.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MessageContent/MessageContent.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MessageHeader/HeaderTitle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MessageHeader/HeaderTitle.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MessageSend/MessageSend.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MessageSend/MessageSend.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MessageSend/SendMessage/SendArea.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MessageSend/SendMessage/SendArea.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Profile/Dialogues/Dialogues.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Profile/Dialogues/Dialogues.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Profile/Profile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Profile/Profile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/render.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/state.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1kQTXrT9rW13mQqBx6zyKeEviKK" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MessageContent" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="yarn" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\programing\web-sites\tinder-clone\src\Components\App\Content\MessageBody\MessageContent" />
+      <recent name="D:\programing\web-sites\tinder-clone\src\Components\App\Profile\Dialogues" />
+      <recent name="D:\programing\web-sites\tinder-clone\src\Components\App\Content\MessageBody\MessageSend\SendMessage" />
+      <recent name="D:\programing\web-sites\tinder-clone\src\Redux" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\programing\web-sites\tinder-clone\src\Components\App\Profile\Header" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1f446376-3c01-4d71-a051-e2a846eafe37" name="Default Changelist" comment="" />
+      <created>1605631858611</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605631858611</updated>
+      <workItem from="1605631926865" duration="3256000" />
+      <workItem from="1605882944613" duration="362000" />
+      <workItem from="1606321278341" duration="889000" />
+      <workItem from="1606322202916" duration="3197000" />
+      <workItem from="1606335052856" duration="4414000" />
+      <workItem from="1606390142894" duration="9138000" />
+      <workItem from="1606474445059" duration="11059000" />
+      <workItem from="1606572776408" duration="1904000" />
+      <workItem from="1606728851090" duration="4952000" />
+      <workItem from="1606818977546" duration="10675000" />
+    </task>
+    <task id="LOCAL-00001" summary="create render and does something with props">
+      <created>1605645689461</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1605645689461</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="create render and does something with props" />
+    <MESSAGE value="create a possible send a messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="create a possible send a messages" />
+  </component>
+</project>

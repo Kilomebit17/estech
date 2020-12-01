@@ -1,4 +1,11 @@
 .content {
     flex: 1 0 auto;
     background-color: #fff;
+    position: relative;
+}
+.send {
+    max-width: 400px;
+    position: absolute;
+    top: 5px;
+    right: 5px;
 }

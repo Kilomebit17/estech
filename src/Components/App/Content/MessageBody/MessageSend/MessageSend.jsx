@@ -3,7 +3,7 @@ import MessageSendCss from './MessageSend.module.css'
 import SendGif from './SendInfo/SendGif'
 import SendMusic from './SendInfo/SendMusic'
 import SendInfo from './SendInfo/SendInfo'
-import SendArea from './SendMessage/SendArea'
+import SendAreaContainer from "./SendMessage/SendAreaContainer";
 const MessageSend = (props) => {
     return (
         <div className={MessageSendCss.content}>
@@ -11,7 +11,7 @@ const MessageSend = (props) => {
                 <SendGif />
                 <SendMusic />
                 <SendInfo />
-                <SendArea addMessage={props.addMessage} changeMessage={props.changeMessage} MessagesContent={props.MessagesContent}/>
+                <SendAreaContainer />
             </div>
         </div>
     )

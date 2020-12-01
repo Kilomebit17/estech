@@ -11,10 +11,10 @@ const App = (props) => {
         <BrowserRouter>
             <div className="App">
                 <div className={ProfileCss.profile__width}>
-                    <Route render={() => <Profile messages={props.state.messagesPage.messagesPeople} />} />
+                    <Route render={() => <Profile />} />
                     <Route path='/profile' render={() => <MyProfile />} />
                 </div>
-                <Route path='/messages/people' render={() => <Content addMessage={props.addMessage} changeMessage={props.changeMessage} MessagesContent={props.state.MessagesContent.messagesValue} />} />
+                <Route path='/messages/people' render={() => <Content/>} />
             </div>
         </BrowserRouter>
     )
