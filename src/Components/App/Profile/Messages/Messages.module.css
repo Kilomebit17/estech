@@ -1,12 +1,27 @@
 .title {
-    font-weight: 600;
-    font-size: .9rem;
+    font-size: 2rem;
     color: #2c2c2c;
     cursor: pointer;
-    padding:0 10px;
-    font-family: 'Nanum Gothic', sans-serif;
+    padding:10px 25px;
+    font-family: 'Bahiana', cursive;
+    margin-bottom:20px;
 }
-.title a.active {
-    padding-bottom: 3px;
-    border-bottom: 3px solid#fb4a54;
+/*.title a.active {*/
+/*    padding-bottom: 3px;*/
+/*    border-bottom: 3px solid#fb4a54;*/
+/*}*/
+.link {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    opacity: .6;
+}
+.active {
+    opacity: 1;
+}
+.img {
+    width: 35px;
+    height: 25px;
+    margin-right: 10px;
+    border-radius:4px;
 }

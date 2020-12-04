@@ -1,18 +1,18 @@
 import './App.css'
 import './index.css'
 import React from 'react'
-import Profile from './Components/App/Profile/Profile';
-import ProfileCss from './Components/App/Profile/Profile.module.css'
+import SideBar from './Components/App/Profile/SideBar';
+import ProfileCss from './Components/App/Profile/SideBar.module.css'
 import Content from './Components/App/Content/Content';
 import { Route, BrowserRouter } from 'react-router-dom';
-import MyProfile from './Components/App/MyProfile/MyProfile';
+import MessageBar from "./Components/App/MessageBar/MessageBar";
 const App = (props) => {
     return (
         <BrowserRouter>
             <div className="App">
                 <div className={ProfileCss.profile__width}>
-                    <Route render={() => <Profile />} />
-                    <Route path='/profile' render={() => <MyProfile />} />
+                    <Route render={() => <SideBar />} />
+                    <Route path='/messages' render={() => <MessageBar />} />
                 </div>
                 <Route path='/messages/people' render={() => <Content/>} />
             </div>

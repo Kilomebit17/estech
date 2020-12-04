@@ -1,0 +1,13 @@
+.img {
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+    object-position: center center;
+}
+.photo {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: #fff;
+}

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+.link {
+    padding:10px 25px;
+    margin: 20px 0;
+    opacity: .6;
+}
+/*.Couples__title a.active {*/
+/*    padding-bottom: 3px;*/
+/*    border-bottom: 3px solid#fb4a54;*/
+/*}*/
+.imgCss {
+    margin-right: 10px;
+    width: 35px;
+    height: 31px;
+}
+.active {
+    opacity: 1;
+}
+.txt {
+    font-size: 2rem;
+    cursor: pointer;
+    font-family: 'Bahiana', cursive;
+    letter-spacing: 5px;
+    color: #fff;
+
+}

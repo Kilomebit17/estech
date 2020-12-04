@@ -9,7 +9,9 @@ const MSContent = (props) => {
         <div className={MSContentCss.content}>
             <Header />
             <MessageContentContainer />
-            <MessageSend />
+            <div className={MSContentCss.msFlex}>
+                <MessageSend />
+            </div>
         </div>
     )
 }

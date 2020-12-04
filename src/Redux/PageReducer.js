@@ -1,8 +1,8 @@
 const initialState = {
     messagesPeople: [
-        { name: 'olga', id: 1 },
-        { name: 'kate', id: 2 },
-        { name: 'oksana', id: 3 },
+        { name: 'username', id: 1 },
+        { name: 'username', id: 2 },
+        { name: 'username', id: 3 },
     ],
 }
 const PageReducer = (state = initialState, action) => {

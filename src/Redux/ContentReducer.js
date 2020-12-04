@@ -1,7 +1,7 @@
 const SEND_MESSAGE = 'SEND_MESSAGE'
 const CHANGE_MESSAGE = 'CHANGE_MESSAGE'
 const initialState = {
-    message: [{ id: 0, message: '' },],
+    message: [{ id: 0, message: 'sup dude' },],
     changeValue: '',
 }
 const contentReducer = (state = initialState, action) => {

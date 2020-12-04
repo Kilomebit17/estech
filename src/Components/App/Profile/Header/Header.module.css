@@ -1,22 +1,14 @@
 .header {
     width: 100%;
-    background: linear-gradient(262deg, #ff7854, #fd267d);
-    box-shadow: 0 1px 8px 0 rgba(0,17,25,.27);
+    cursor: pointer;
 }
 .header__logo {
-    padding:20px 30px;
     display: flex;
     align-items: center;
+    padding:15px 0 0 15px;
+    cursor: pointer;
 }
 .header__img {
-    border-radius: 50%;
-    width: 30px;
-    border: 2px solid #fff;
-}
-.header__title {
-    font-family: sans-serif;
-    font-size: 1.6rem;
-    margin-left: 10px;
-    color: #fff;
-    font-weight: 500;
+    cursor: pointer;
+    width: 100px;
 }

@@ -1,5 +1,5 @@
 .content {
-    background-color: #f5f7fa;
-    width: 79%;
+    background-image: linear-gradient( 0deg,  rgba(5,84,94,1) 16%, #bbb 91.1% );
     height: 100vh;
+    width: 100vw;
 }

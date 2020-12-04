@@ -1,0 +1,24 @@
+.title {
+    display: flex;
+    align-items: center;
+    padding:10px 25px;
+    opacity: .5;
+}
+.active {
+    opacity: 1;
+}
+.friends {
+    margin-bottom: 20px;
+}
+.txt {
+    font-family: 'Bahiana', cursive;
+    letter-spacing: 5px;
+    color: #fff;
+    font-size: 2rem;
+    cursor: pointer;
+}
+.imgCss {
+    margin-right: 10px;
+    width: 35px;
+    height: 31px;
+}

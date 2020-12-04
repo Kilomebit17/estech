@@ -1,12 +1,17 @@
 .textarea {
-    min-width: 400px;
-    /* max-width: 400px; */
+    min-width: 560px;
     font-family: 'Nanum Gothic', sans-serif;
     outline: none;
-    border: none;
+    border: 1px solid #fff;
     padding:8px;    
     resize: none;
     font-size:1.1rem;
+    background-color: rgba(5,84,94,1);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+.textarea::placeholder {
+    color: #fff;
 }
 .content {
     display: flex;
@@ -27,11 +32,16 @@
 }
 .contentFlex {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     width: 100%;
 }
 .sendBtns {
     display: flex;
     align-items: center;
+}
+.img {
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    margin-left: 20px;
 }
