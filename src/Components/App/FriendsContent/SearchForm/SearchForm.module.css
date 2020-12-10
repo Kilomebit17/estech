@@ -1,0 +1,28 @@
+.searchContent {
+    display: flex;
+    align-items: center;
+    padding: 17px 0 18px 15px;
+    max-width: 100vw;
+    min-width: 325px;
+    margin-left: 130px;
+}
+.bg {
+    background: #161c29;
+    box-shadow: 0 2px 5px #161c29;
+}
+.textarea {
+    line-height: 2.2;
+    outline: none;
+    resize: none;
+    font-size: 1rem;
+    border: none;
+    padding: 5px 5px 5px 10px;
+    color: #ffffff;
+    height: 50px;
+    width: 100%;
+    background: none;
+}
+.textarea::placeholder {
+    color: #fff;
+    font-size: 1.1rem;
+}

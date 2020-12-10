@@ -2,7 +2,7 @@ import React from 'react'
 import SendCss from './Send.module.css'
 const Send = (props) => {
     return (
-    <div className={SendCss.send}>{props.title}</div>
+    <span className={SendCss.send}>{props.title}</span>
     )
 }
 export default Send;

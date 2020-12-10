@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(5,84,94,1);
+    background-color: #181e2d;
 }
 .send__info {
     display: flex;

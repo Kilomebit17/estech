@@ -1,26 +1,34 @@
 const SEND_MESSAGE = 'SEND_MESSAGE'
 const CHANGE_MESSAGE = 'CHANGE_MESSAGE'
 const initialState = {
-    message: [{ id: 0, message: 'sup dude' },],
+    message: [{ id: 0, message: ''}],
     changeValue: '',
 }
 const contentReducer = (state = initialState, action) => {
     switch (action.type) {
-        case SEND_MESSAGE:
-            const newMessage = state.changeValue;
-            state.message.push({ id: 1, message: newMessage })
-            state.changeValue = ''
+        case SEND_MESSAGE: {
+            let newMessage = state.changeValue;
+            let stateCopy = {...state}
+            stateCopy.message = [...state.message]
+            stateCopy.message.push({id: 1, message: newMessage})
+            stateCopy.changeValue = ''
+            return stateCopy
+        }
+    }
+    switch (action.type) {
+        case CHANGE_MESSAGE: {
+            let stateCopy = {...state}
+            stateCopy.changeValue = action.changeValue
+            return stateCopy;
+        }
+        default:
             return state
-        case CHANGE_MESSAGE:
-            state.changeValue = action.changeValue
-            return state;
-        default: return state
     }
 }
-export const onWriteAction = (type) => {
+export const onWriteAction = (text) => {
     return {
         type: CHANGE_MESSAGE,
-        changeValue: type
+        changeValue: text
     }
 }
 export const sendMessageAction = () => {

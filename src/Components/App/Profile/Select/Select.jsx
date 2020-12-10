@@ -6,7 +6,7 @@ import Friends from "../Friends/Friends";
 const Select = () => {
     return (
         <div className={SelectCss.content}>
-            <MyProfile/>
+            {/*<MyProfile/>*/}
             <Messages/>
             <Friends />
         </div>

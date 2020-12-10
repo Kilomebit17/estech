@@ -4,9 +4,7 @@ import ContentCss from './Content.module.css'
 const Content = (props) => {
     return (
         <div className={ContentCss.content}>
-            <MSContent dispatch={props.dispatch}
-                MessagesContent={props.MessagesContent}
-                messageArr={props.messageArr} />
+            <MSContent />
         </div>
     )
 }

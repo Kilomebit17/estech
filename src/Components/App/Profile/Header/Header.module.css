@@ -5,10 +5,17 @@
 .header__logo {
     display: flex;
     align-items: center;
-    padding:15px 0 0 15px;
+    padding:10px;
     cursor: pointer;
+}
+.link {
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: block;
 }
 .header__img {
     cursor: pointer;
-    width: 100px;
+    width: 80px;
 }

@@ -6,7 +6,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid #dfd4bc;
-    background-color: #bbb;
+    background-color: #161c29;
+    box-shadow: 0 2px 5px #161c29;
     cursor: pointer;
+    z-index: 1;
 }

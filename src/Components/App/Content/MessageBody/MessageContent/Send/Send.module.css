@@ -1,6 +1,7 @@
 .send {
     margin:15px 15px;
-    background-color: #3498db;
+    background: rgb(252,48,88);
+    background: linear-gradient(80deg, rgba(252,48,88,1) 0%, rgba(125,36,207,1) 100%);
     padding: 10px;
     border-radius: 10px;
     color: #fff;
@@ -8,4 +9,5 @@
     text-align: right;
     line-height: 1.3;
     font-family: "Nanum Gothic", sans-serif;
+    display: block;
 }

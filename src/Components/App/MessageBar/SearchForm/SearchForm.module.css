@@ -1,14 +1,12 @@
 .form {
     display: flex;
     align-items: center;
-    background: none;
-    padding: 5px;
-    border-top-left-radius:10px;
-    border-top-right-radius:10px;
-    border-bottom: 1px solid #fff;
+    background: #161c29;
+    box-shadow: 0 2px 5px #161c29;
+    padding: 17px 0 18px 0;
 }
 .img {
-    padding-left: 10px;
+    padding-left: 25px;
 }
 .searchform {
     line-height: 2.5;

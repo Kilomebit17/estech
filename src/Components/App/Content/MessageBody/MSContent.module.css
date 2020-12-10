@@ -4,7 +4,7 @@
     min-height: 100%;
 }
 .msFlex {
-    border-top: 2px solid #dfd4bc;
-    display: flex;
-    justify-content: center;
+    box-shadow: 0 0 20px #191e2d;
+    background-color: #181e2d;
+    z-index: 2;
 }

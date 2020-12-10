@@ -5,8 +5,8 @@ import UserPhoto from './UserPhoto/UserPhoto'
 
 const DialoguesUsers = (props) => {
     return (
-        <NavLink to={"/messages/people/" + props.id} className={DialoguesUsersCss.link}>
-            <div className={DialoguesUsersCss.content}>
+        <NavLink to={"/messages/people/" + props.id} className={DialoguesUsersCss.content} activeClassName={DialoguesUsersCss.active}>
+            <div className={DialoguesUsersCss.flex}>
                 <UserPhoto />
                 <span className={DialoguesUsersCss.dialog}>{props.title}</span>
             </div>

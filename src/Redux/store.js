@@ -1,5 +1,6 @@
 import contentReducer from "./ContentReducer";
 import PageReducer from "./PageReducer";
+import FriendsReducer from './FriendsReducer'
 const store = {
     _state: {
         messagesPage: {
@@ -8,25 +9,29 @@ const store = {
                 { name: 'kate', id: 2 },
                 { name: 'oksana', id: 3 },
             ],
+            SearchForm: {
+                value: '',
+            },
         },
         MessagesContent: {
             message: [{ id: 0, message: '' },],
             changeValue: '',
         },
+        FriendsContent: {
+            friends: [
+                { id: 0, friendName: 'Nazar' },
+                { id: 1, friendName: 'Kostya' },
+            ],
+            friendsValue:''
+        }
     },
     getState() {
         return this._state;
     },
     dispatch(action) {
         this._state.MessagesContent = contentReducer(this._state.MessagesContent, action)
-        this._state.messagesPage = PageReducer(this._state.messagesPage)
-        this._renderEntireTree(this._state)
-    },
-    _renderEntireTree() {},
-    subscribe(observe) {
-        this._renderEntireTree = observe
+        this._state.FriendsContent = FriendsReducer(this._state.FriendsContent, action)
+        this._state.messagesPage = PageReducer(this._state.messagesPage, action)
     }
-
 }
-console.log(store);
 export default store;

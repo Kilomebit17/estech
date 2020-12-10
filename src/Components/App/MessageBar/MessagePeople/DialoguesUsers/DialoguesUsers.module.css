@@ -7,14 +7,20 @@
     color: #fff;
 }
 .content {
-    display: flex;
-    padding:10px 20px;
+    padding:20px;
     min-width: 200px;
+    margin: 20px;
+    background-color: #131928;
+    display: flex;
+    border-radius: 5px;
+}
+.flex {
+    display: flex;
+}
+.active {
+    background: rgb(252,48,88);
+    background: linear-gradient(80deg, rgba(252,48,88,1) 0%, rgba(125,36,207,1) 100%);
 }
 .content:hover {
-    border-right: 4px solid #fd5068;
     box-shadow: 0 0 15px 0 hsla(0,0%,50.6%,.22);
-}
-.link {
-    cursor: pointer;
 }

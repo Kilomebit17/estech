@@ -5,19 +5,12 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 import {Provider} from "react-redux";
-export const renderEntireTree = (state) => {
-    ReactDOM.render(
-        <React.StrictMode>
-            <Provider store={store}>
-                <App/>
-            </Provider>
-        </React.StrictMode>,
-        document.getElementById('root')
-    );
-}
-renderEntireTree(store.getState()) // вызываем ф-цию рендера страницы
-store.subscribe(() => {
-    const state = store.getState()
-    renderEntireTree(state)
-}) // в subscribe передаем всю нашу страницу вместо импорта что бы небыло ципочки
+import { BrowserRouter } from 'react-router-dom';
+
+ReactDOM.render (
+    <BrowserRouter>
+        <Provider store={store}>
+            <App/>
+        </Provider>
+    </BrowserRouter>, document.getElementById('root'));
 reportWebVitals(); //это я хз что такое

@@ -3,9 +3,17 @@ import SendAreaCss from './SendArea.module.css'
 import img from "./send.png";
 
 const SendArea = (props) => {
-    const onWrite = (e) => {
+    const onWriteArea = (e) => {
         const value = e.target.value
         props.onWrite(value)
+    }
+    const keyDown = (e) => {
+        const emptyStr = e.target.value
+        if (e.key === 'Enter') {
+            props.sendMessageAction()
+        } else if (emptyStr === ''){
+            return emptyStr.trim()
+        }
     }
     const AddMessage = () => {
         props.sendMessageAction()
@@ -13,10 +21,10 @@ const SendArea = (props) => {
     return (
         <div className={SendAreaCss.contentFlex}>
             <div className={SendAreaCss.content}>
-                <textarea onChange={onWrite} placeholder="Введите сообщение" maxLength="5000" value={props.MessagesContent.changeValue} className={SendAreaCss.textarea} />
+                <textarea onChange={onWriteArea} onKeyDown={keyDown} placeholder="Введите сообщение" maxLength="5000" value={props.MessagesContent.changeValue} className={SendAreaCss.textarea} />
             </div>
             <div className={SendAreaCss.sendBtns}>
-                <img src={img} className={SendAreaCss.img}/>
+                <img onClick={AddMessage} src={img} className={SendAreaCss.img}/>
             </div>
         </div>
     )

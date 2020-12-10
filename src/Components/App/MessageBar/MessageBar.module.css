@@ -1,10 +1,9 @@
 .content {
     color: #fff;
-    border-left: 1px solid #fff;
-    border-right: 1px solid #fff;
+    background-color: #1a202f;
     max-width: 325px;
+    min-width: 325px;
 }
 .MHCSS {
     padding-top: 40px;
-    border-bottom: 1px solid #fff;
 }

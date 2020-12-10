@@ -1,10 +1,6 @@
 .title {
-    font-size: 2rem;
-    color: #2c2c2c;
     cursor: pointer;
-    padding:10px 25px;
-    font-family: 'Bahiana', cursive;
-    margin-bottom:20px;
+    height: auto;
 }
 /*.title a.active {*/
 /*    padding-bottom: 3px;*/
@@ -15,6 +11,7 @@
     display: flex;
     align-items: center;
     opacity: .6;
+    margin:15px 0;
 }
 .active {
     opacity: 1;
@@ -22,6 +19,6 @@
 .img {
     width: 35px;
     height: 25px;
-    margin-right: 10px;
+    /*margin-right: 10px;*/
     border-radius:4px;
 }

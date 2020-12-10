@@ -6,7 +6,7 @@ const Friends = () => {
     return (
         <div className={FriendsCss.friends}>
             <div>
-                <NavLink to="friends" activeClassName={FriendsCss.active} className={FriendsCss.title}>
+                <NavLink to="/friends" activeClassName={FriendsCss.active} className={FriendsCss.title}>
                     <img src={img} alt="img" className={FriendsCss.imgCss}/>
                     <div className={FriendsCss.txt}></div>
                 </NavLink>
