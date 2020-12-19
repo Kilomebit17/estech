@@ -7,10 +7,10 @@
     opacity: 1;
 }
 .txt {
+    padding-left: 10px;
     font-family: 'Bahiana', cursive;
-    letter-spacing: 5px;
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 .imgCss {

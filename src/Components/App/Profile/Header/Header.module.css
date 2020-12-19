@@ -5,14 +5,15 @@
 .header__logo {
     display: flex;
     align-items: center;
-    padding:10px;
     cursor: pointer;
 }
 .link {
-    background-color: #fff;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
+    background-color: #8EC5FC;
+    background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+    width: 100%;
+    object-fit: cover;
+    object-position:top center;
+    height: 110px;
     display: block;
 }
 .header__img {

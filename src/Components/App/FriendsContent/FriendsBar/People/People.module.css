@@ -1,16 +1,40 @@
 .title {
     color: #fff;
     font-size: 2rem;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 400;
+    padding: 10px 0 0 10px;
 }
 .content {
     margin: 20px;
     border-radius: 10px;
-    background-color:rgba(255,255,255,.4);
+    background: rgb(17,22,32);
+    background: linear-gradient(80deg, rgba(17,22,32,1) 0%, rgba(22,28,41,1) 100%);
     display: flex;
 }
+.send {
+    padding-left: 10px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    background:none ;
+    outline: none;
+    font-size: 1rem;
+}
+.follow {
+    outline: none;
+    display: block;
+    background-color: #1dd1a1;
+    border: none;
+    cursor: pointer;
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 1rem;
+    color: #fff;
+    margin-left: 10px;
+}
 .img {
-    padding: 10px;
     height: 100px;
     width: 100px;
-    background-color: #fd267d;
+    object-fit: cover;
+    object-position: top center;
 }

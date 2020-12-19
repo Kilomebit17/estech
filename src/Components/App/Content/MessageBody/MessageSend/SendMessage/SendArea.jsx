@@ -11,7 +11,7 @@ const SendArea = (props) => {
         const emptyStr = e.target.value
         if (e.key === 'Enter') {
             props.sendMessageAction()
-        } else if (emptyStr === ''){
+        } else if(emptyStr === ''){
             return emptyStr.trim()
         }
     }

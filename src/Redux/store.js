@@ -22,7 +22,7 @@ const store = {
                 { id: 0, friendName: 'Nazar' },
                 { id: 1, friendName: 'Kostya' },
             ],
-            friendsValue:''
+            friendsValue:'',
         }
     },
     getState() {

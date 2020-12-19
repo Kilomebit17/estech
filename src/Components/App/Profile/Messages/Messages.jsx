@@ -7,7 +7,7 @@ const Messages = () => {
             <NavLink to="/messages" activeClassName={MessagesCss.active} className={MessagesCss.link}>
                 <div className={MessagesCss.title}>
                     <img src={img} alt="img" className={MessagesCss.img}/>
-                    <div className={MessagesCss.txt}></div>
+                    <div className={MessagesCss.txt}>Messages</div>
                 </div>
             </NavLink>
     )
