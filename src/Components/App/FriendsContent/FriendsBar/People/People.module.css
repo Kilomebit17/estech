@@ -1,9 +1,9 @@
 .title {
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.4rem;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 400;
-    padding: 10px 0 0 10px;
+    padding-left: 10px;
 }
 .content {
     margin: 20px;
@@ -12,29 +12,38 @@
     background: linear-gradient(80deg, rgba(17,22,32,1) 0%, rgba(22,28,41,1) 100%);
     display: flex;
 }
+.textBlock {
+    padding:10px;
+}
 .send {
-    padding-left: 10px;
+    padding:5px 10px;
+    margin:10px;
+    border-radius: 15px;
     color: #fff;
     cursor: pointer;
-    border: none;
+    border: 1px solid #fff;
     background:none ;
     outline: none;
     font-size: 1rem;
+}
+.send:hover {
+    background: rgb(11,215,127);
+    background: linear-gradient(90deg, rgba(11,215,127,1) 0%, rgba(0,151,255,1) 100%);
 }
 .follow {
     outline: none;
     display: block;
     background-color: #1dd1a1;
     border: none;
+    border-radius: 15px;
     cursor: pointer;
     font-family: 'Rajdhani', sans-serif;
     font-size: 1rem;
     color: #fff;
+    padding:5px 10px;
     margin-left: 10px;
 }
 .img {
-    height: 100px;
-    width: 100px;
     object-fit: cover;
     object-position: top center;
 }

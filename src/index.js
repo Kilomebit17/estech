@@ -5,8 +5,7 @@ import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from './App';
 import {Provider} from "react-redux";
-import { BrowserRouter } from 'react-router-dom';
-
+import { BrowserRouter} from 'react-router-dom';
 ReactDOM.render (
     <BrowserRouter>
         <Provider store={store}>

@@ -4,7 +4,7 @@ import { Route } from 'react-router-dom'
 import Select from './Select/Select'
 import Header from './Header/Header'
 
-const SideBar = (props) => {
+const SideBar = () => {
     return (
         <div className={SideBarCss.bg}>
                 <Route render={() => <Header />} />

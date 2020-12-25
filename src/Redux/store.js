@@ -4,11 +4,7 @@ import FriendsReducer from './FriendsReducer'
 const store = {
     _state: {
         messagesPage: {
-            messagesPeople: [
-                { name: 'olga', id: 1 },
-                { name: 'kate', id: 2 },
-                { name: 'oksana', id: 3 },
-            ],
+            messagesPeople: [],
             SearchForm: {
                 value: '',
             },

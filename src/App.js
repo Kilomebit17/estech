@@ -7,7 +7,7 @@ import Content from './Components/App/Content/Content';
 import { Route } from 'react-router-dom';
 import MessageBar from "./Components/App/MessageBar/MessageBar";
 import FriendsPage from "./Components/App/FriendsContent/FriendsPage";
-const App = (props) => {
+const App = () => {
     return (
         <div className={ProfileCss.profile__width}>
             <Route render={() => <SideBar />} />

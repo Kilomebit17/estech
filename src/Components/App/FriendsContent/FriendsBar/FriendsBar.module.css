@@ -1,4 +1,28 @@
-.names {
-    max-width: 400px;
-    margin-left: 50px;
+.friends {
+    max-width: 450px;
+    margin: 20px 50px;
+    height:83%;
+    overflow:hidden auto;
+    color: #fff;
+}
+span {
+    padding:0 5px;
+    cursor: pointer;
+}
+.selectSpan {
+    font-size: 1rem;
+    margin:0 5px;
+    font-weight: 700;
+}
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #1dd1a1;
+    border-radius: 20px;
+}
+::-webkit-scrollbar-track {
+    height: 10px;
+    background-color: #111620;
+    border-radius: 20px;
 }
