@@ -9,5 +9,5 @@ const reducers = combineReducers({ // создает внутри себя state
     SearchForm:PageReducer,
 })
 const store = createStore(reducers)
-
+// console.log(store.getState())
 export default store;

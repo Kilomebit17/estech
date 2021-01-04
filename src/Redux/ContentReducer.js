@@ -17,9 +17,7 @@ const contentReducer = (state = initialState, action) => {
     }
     switch (action.type) {
         case CHANGE_MESSAGE: {
-            let stateCopy = {...state}
-            stateCopy.changeValue = action.changeValue
-            return stateCopy;
+            return {...state,changeValue:action.changeValue};
         }
         default:
             return state

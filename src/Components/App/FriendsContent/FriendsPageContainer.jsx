@@ -1,13 +1,43 @@
 import React from 'react'
-import FriendsPageCss from './FriendsPage.module.css'
-import SearchFormContainer from "./SearchForm/SearchFormContainer";
-import FriendsBarContainer from "./FriendsBar/FriendsBarContainer";
-const FriendsPage = () => {
+import * as axios from "axios";
+import {connect} from "react-redux";
+import {setProfileFriend,setFetching} from '../../../Redux/FriendsReducer'
+import UserProfile from './FriendsBar/UserProfile';
+import Preloader from './FriendsBar/Preloader';
+import { withRouter } from 'react-router-dom';
+class FriendsPageContainer extends React.Component{
+    componentDidMount() {
+        let userId = this.props.match.params.userId;
+        if (!userId) {
+            userId = 2
+        }
+        this.props.setFetching(true);
+        axios
+            .get(
+                `https://social-network.samuraijs.com/api/1.0/profile/${userId}`
+            )
+            .then((response) => {
+                console.log(response);
+                this.props.setFetching(false);
+                this.props.setProfileFriend(response.data);
+            });
+    }
+    render() {
+    if (!this.props.profileFriend) {
+        return <Preloader />
+    }
     return (
-        <div className={FriendsPageCss.content}>
-            <SearchFormContainer />
-            <FriendsBarContainer  />
+        <div>
+            <UserProfile {...this.props} profileFriend={this.props.profileFriend}/>
         </div>
     )
+    }
 }
-export default FriendsPage;
+const mapStateToProps = (state) => {
+    return {
+        profileFriend:state.FriendsContent.profileFriend,
+        isFetching:state.FriendsContent.isFetching
+    }
+}
+const WithUrlDataContainerComponent = withRouter(FriendsPageContainer)
+export default connect(mapStateToProps, {setProfileFriend,setFetching})(WithUrlDataContainerComponent);

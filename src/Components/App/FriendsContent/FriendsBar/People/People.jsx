@@ -1,8 +1,10 @@
 import React from 'react'
+import { NavLink } from 'react-router-dom'
 import p from './People.module.css'
 const People = (props) => {
     return (
-        <div className={p.content}>
+        <NavLink to={'/profile/' + props.id}>
+            <div className={p.content}>
             <img src={props.photoUrl} alt="peoples pictures" className={p.img}/>
             <div className={p.textBlock}>
                 <div className={p.title}>{props.title}</div>
@@ -17,6 +19,7 @@ const People = (props) => {
                 </div>
             </div>
         </div>
+        </NavLink>
     )
 }
 export default People;
