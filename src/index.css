@@ -8,6 +8,7 @@ body {
   font-size: 14px;
   color: #2d3436;
   background-color: #f5f7fa;
+  overflow-y:hidden;
 }
 *,
 *::before,

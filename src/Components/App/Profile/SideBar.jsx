@@ -1,13 +1,12 @@
 import React from 'react'
 import SideBarCss from './SideBar.module.css'
-import { Route } from 'react-router-dom'
 import Select from './Select/Select'
-import Header from './Header/Header'
+import HeaderContainer from './Header/HeaderContainer'
 
 const SideBar = () => {
     return (
-        <div className={SideBarCss.bg}>
-                <Route render={() => <Header />} />
+        <div>
+            <HeaderContainer />
             <div className={SideBarCss.select}>
                 <Select />
             </div>

@@ -5,21 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f446376-3c01-4d71-a051-e2a846eafe37" name="Default Changelist" comment="create render and does something with props">
-      <change afterPath="$PROJECT_DIR$/src/Components/App/FriendsContent/FriendsBar/UserProfile.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/App/FriendsContent/FriendsBar/UserProfile.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Components/App/FriendsContent/FriendsPageContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MessageHeader/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MessageHeader/Header.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MessageHeader/HeaderTitle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MessageHeader/HeaderTitle.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/FriendsContent/FriendsBar/FriendsBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/FriendsContent/FriendsBar/FriendsBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/FriendsContent/FriendsBar/FriendsBarContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/FriendsContent/FriendsBar/FriendsBarContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/FriendsContent/FriendsBar/People/People.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/FriendsContent/FriendsBar/People/People.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/FriendsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/FriendsReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/PageReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/PageReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MSContent.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MSContent.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/MessageBar/MessageBar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/MessageBar/MessageBar.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Profile/Header/Header.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Profile/Header/Header.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Profile/Header/Header.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Profile/Header/Header.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Profile/MyProfile/MyProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Profile/MyProfile/MyProfile.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Profile/Select/Select.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Profile/Select/Select.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Profile/SideBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Profile/SideBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Profile/SideBar.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Profile/SideBar.module.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/ReduxStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/ReduxStore.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +45,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/App/FriendsContent" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -143,6 +140,8 @@
       <workItem from="1608920372683" duration="1392000" />
       <workItem from="1609355775169" duration="7811000" />
       <workItem from="1609423788168" duration="2307000" />
+      <workItem from="1609959744150" duration="1583000" />
+      <workItem from="1610129295123" duration="544000" />
     </task>
     <task id="LOCAL-00001" summary="create render and does something with props">
       <created>1605645689461</created>
@@ -206,8 +205,9 @@
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/Components/App/FriendsContent/FriendsBar/FriendsBarContainer.jsx</url>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/src/Components/App/FriendsContent/FriendsBar/FriendsBar.jsx</url>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -3,6 +3,7 @@
     background-color: #1a202f;
     max-width: 325px;
     min-width: 325px;
+    box-shadow: -1px 0 10px 1px #1a202f;
 }
 .MHCSS {
     padding-top: 40px;

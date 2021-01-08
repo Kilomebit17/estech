@@ -1,11 +1,17 @@
 .header {
     width: 100%;
     cursor: pointer;
+    z-index: 1000;
 }
 .header__logo {
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+.header__login {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.4rem;
 }
 .link {
     background-color: #8EC5FC;

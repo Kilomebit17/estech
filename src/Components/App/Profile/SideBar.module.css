@@ -5,7 +5,7 @@
     background-color: #111620;
 }
 .select {
-    transform: translateY(-120px);
+    padding-bottom: 120px;
     display: flex;
     justify-content: center;
     align-items: center;

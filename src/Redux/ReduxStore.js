@@ -2,12 +2,14 @@ import {combineReducers, createStore} from "redux";
 import contentReducer from "./ContentReducer";
 import PageReducer from "./PageReducer";
 import FriendsReducer from "./FriendsReducer";
+import authReducer from './authReducer'
 const reducers = combineReducers({ // создает внутри себя state
     MessagesContent:contentReducer,
     messagesPage:PageReducer,
     FriendsContent:FriendsReducer,
     SearchForm:PageReducer,
+    auth:authReducer    
 })
 const store = createStore(reducers)
-// console.log(store.getState())
+console.log(store.getState())
 export default store;

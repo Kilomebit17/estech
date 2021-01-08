@@ -1,19 +1,16 @@
-import React from 'react'
-import HeaderCss from './Header.module.css'
-import { NavLink } from 'react-router-dom';
-import * as axios from "axios";
+import React from "react";
+import HeaderCss from "./Header.module.css";
+import { NavLink } from "react-router-dom";
 
-class Header extends React.Component {
-    render() {
-        return (
-            <div className={HeaderCss.header}>
-                <div className={HeaderCss.header__logo}>
-                    <NavLink to='/home' >
-                        <img src='https://i.pinimg.com/564x/6e/7a/b3/6e7ab3d5842c0f16f330213bb438c60b.jpg' alt="profile picture" className={HeaderCss.link}/>
-                    </NavLink>
-                </div>
-            </div>
-        )
-    }
-}
+const Header = (props) => {
+  return (
+    <NavLink to="/my-profile">
+      <div className={HeaderCss.header}>
+        <div className={HeaderCss.header__logo}>
+          {props.isAuth ? <h1 className={HeaderCss.header__login}>{props.login}</h1> : <NavLink to={'login'}><button>login</button></NavLink>}
+        </div>
+      </div>
+    </NavLink>
+  );
+};
 export default Header;
