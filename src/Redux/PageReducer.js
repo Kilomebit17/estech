@@ -12,9 +12,7 @@ const initialState = {
 const PageReducer = (state = initialState, action) => {
     switch (action.type) {
         case SearchValue:
-            let stateCopy = {...state}
-            stateCopy.value = action.value
-            return stateCopy
+            return {...state,value:action.value}
     }
     return state
 }

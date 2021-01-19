@@ -1,40 +1,18 @@
 import React from "react";
 import { connect } from "react-redux";
 import {
-  follow,
-  unFollow,
-  setFriends,
-  setCurrentPage,
-  setTotalCount,
-  setFetching,
+  getFriendsThunkCreator,
+  followThunkCreator,
+  unFollowThunkCreator,
 } from "./../../../../Redux/FriendsReducer";
-import * as axios from "axios";
 import FriendsBar from "./FriendsBar";
 import Preloader from "./Preloader";
 class FriendsBarAPI extends React.Component {
   componentDidMount() {
-    this.props.setFetching(true);
-    axios
-      .get(
-        `https://social-network.samuraijs.com/api/1.0/users?page=${this.props.currentPage}&count=${this.props.pageSize}`
-      )
-      .then((response) => {
-        this.props.setFetching(false);
-        this.props.setFriends(response.data.items);
-        this.props.setTotalCount(response.data.totalCount);
-      });
+    this.props.getFriendsThunkCreator(this.props.currentPage,this.props.pageSize)
   }
   getCurrentPage = (pageNumber) => {
-    this.props.setFetching(true);
-    this.props.setCurrentPage(pageNumber);
-    axios
-      .get(
-        `https://social-network.samuraijs.com/api/1.0/users?page=${pageNumber}&count=${this.props.pageSize}`
-      )
-      .then((response) => {
-        this.props.setFetching(false);
-        this.props.setFriends(response.data.items);
-      });
+    this.props.getFriendsThunkCreator(pageNumber,this.props.pageSize)
   };
   render() {
     return (
@@ -42,11 +20,13 @@ class FriendsBarAPI extends React.Component {
         {this.props.isFetching ? <Preloader /> : null}
         <FriendsBar
           FriendsContent={this.props.FriendsContent}
+          followStatus={this.props.followStatus}
           getCurrentPage={this.getCurrentPage}
           pageSize={this.props.pageSize}
           totalCount={this.props.totalCount}
-          follow={this.props.follow}
-          unFollow={this.props.unFollow}
+          followThunkCreator={this.props.followThunkCreator}
+          unFollowThunkCreator={this.props.unFollowThunkCreator}
+          followingInProgress={this.props.followingInProgress}
         />
       </>
     );
@@ -59,15 +39,14 @@ const mapStateToProps = (state) => {
     totalCount: state.FriendsContent.totalCount,
     currentPage: state.FriendsContent.currentPage,
     isFetching: state.FriendsContent.isFetching,
+    followingInProgress:state.FriendsContent.followingInProgress,
+    followStatus:state.FriendsContent.followStatus,
   };
 };
 
 const FriendsBarContainer = connect(mapStateToProps, {
-  follow,
-  unFollow,
-  setFriends,
-  setCurrentPage,
-  setTotalCount,
-  setFetching,
+  getFriendsThunkCreator,
+  followThunkCreator,
+  unFollowThunkCreator
 })(FriendsBarAPI);
 export default FriendsBarContainer;

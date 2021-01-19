@@ -9,14 +9,14 @@ const FriendsBar = (props) => {
   }
   const people = props.FriendsContent.map((users) => (
     <People
+      followThunkCreator={props.followThunkCreator}
+      unFollowThunkCreator={props.unFollowThunkCreator}
+      followingInProgress={props.followingInProgress}
+      followStatus={props.followStatus}
       title={users.name}
       id={users.id}
       key={users.id}
-      follow={users.followStatus}
       photoUrl={users.photos}
-      followStatus={users.followStatus}
-      unFollow={props.unFollow}
-      follow={props.follow}
     />
   ));
   return (

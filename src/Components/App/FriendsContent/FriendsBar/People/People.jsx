@@ -1,25 +1,32 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import p from './People.module.css'
+import {deleteFollow, postFollow} from "../../../../../API/API";
 const People = (props) => {
     return (
+        <div className={p.content}>
         <NavLink to={'/profile/' + props.id}>
-            <div className={p.content}>
-            <img src={props.photoUrl} alt="peoples pictures" className={p.img}/>
+            {/*<img src={props.photoUrl} alt="peoples pictures" className={p.img}/>*/}
             <div className={p.textBlock}>
                 <div className={p.title}>{props.title}</div>
-                <button className={p.send}>Написать сообщение</button>
-                <div>
-                    {
-                        props.followStatus ?
-                            <button onClick={() => {props.unFollow(props.id)}} className={p.follow}>Вы подписаны</button>
-                            :
-                            <button onClick={() => {props.follow(props.id)}} className={p.follow}>Подписаться</button>
-                    }
-                </div>
             </div>
-        </div>
         </NavLink>
+            <button className={p.send}>Написать сообщение</button>
+                {
+                    props.followStatus ?
+                        <button
+                            disabled={props.followingInProgress.includes(props.id)}
+                            onClick={() => {props.unFollowThunkCreator(props.id)}}
+                            className={p.follow}>Вы подписаны
+                        </button>
+                        :
+                        <button
+                            disabled={props.followingInProgress.includes(props.id)}
+                            onClick={() => {props.followThunkCreator(props.id)}}
+                            className={p.follow}>Подписаться
+                        </button>
+                }
+        </div>
     )
 }
 export default People;
