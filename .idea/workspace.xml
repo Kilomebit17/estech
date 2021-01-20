@@ -5,17 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1f446376-3c01-4d71-a051-e2a846eafe37" name="Default Changelist" comment="create render and does something with props">
-      <change afterPath="$PROJECT_DIR$/src/API/API.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Content/Login/Login.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/App/Content/Login/Login.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Components/App/MessageBar/MessageBarContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/FriendsContent/FriendsBar/FriendsBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/FriendsContent/FriendsBar/FriendsBar.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Components/App/FriendsContent/FriendsBar/FriendsBarContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/FriendsContent/FriendsBar/FriendsBarContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/API/API.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/API/API.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MessageHeader/HeaderTitle.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Content/MessageBody/MessageHeader/HeaderTitle.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App/FriendsContent/FriendsBar/People/People.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/FriendsContent/FriendsBar/People/People.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/FriendsContent/FriendsBar/UserProfile.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/FriendsContent/FriendsBar/UserProfile.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Components/App/FriendsContent/FriendsPageContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/FriendsContent/FriendsPageContainer.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/MessageBar/MessageBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/MessageBar/MessageBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Components/App/Profile/Header/HeaderContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/Components/App/Profile/Header/HeaderContainer.jsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/FriendsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/FriendsReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/PageReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/PageReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Redux/ReduxStore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/ReduxStore.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Redux/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/authReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +47,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/Components/App/MessageBar" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -55,18 +58,18 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="yarn" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
     <property name="settings.editor.splitter.proportion" value="0.22434151" />
     <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 203.5981.31\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\programing\web-sites\estech\src\Components\App\MessageBar" />
       <recent name="D:\programing\web-sites\estech\src\Components\App\FriendsContent" />
       <recent name="D:\programing\web-sites\estech\src\Components\App\MessageBar\SearchForm" />
       <recent name="D:\programing\web-sites\tinder-clone\src\Components\App\Content\MessageBody\MessageContent" />
       <recent name="D:\programing\web-sites\tinder-clone\src\Components\App\Profile\Dialogues" />
-      <recent name="D:\programing\web-sites\tinder-clone\src\Components\App\Content\MessageBody\MessageSend\SendMessage" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\programing\web-sites\tinder-clone\src\Components\App\MessageBar\MessagePeople" />
@@ -148,7 +151,10 @@
       <workItem from="1610703816089" duration="1035000" />
       <workItem from="1610887209306" duration="7654000" />
       <workItem from="1610967514748" duration="7870000" />
-      <workItem from="1611050015017" duration="1482000" />
+      <workItem from="1611050015017" duration="3811000" />
+      <workItem from="1611142975181" duration="4361000" />
+      <workItem from="1611174051543" duration="124000" />
+      <workItem from="1611174220281" duration="916000" />
     </task>
     <task id="LOCAL-00001" summary="create render and does something with props">
       <created>1605645689461</created>
@@ -185,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610130103465</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="create api file and some refactoring code">
+      <created>1611059174755</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1611059174755</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -210,7 +223,8 @@
     <MESSAGE value="change something" />
     <MESSAGE value="changed something in header create a container commponent and get a user profile from DB" />
     <MESSAGE value="??" />
-    <option name="LAST_COMMIT_MESSAGE" value="??" />
+    <MESSAGE value="create api file and some refactoring code" />
+    <option name="LAST_COMMIT_MESSAGE" value="create api file and some refactoring code" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -17,7 +17,7 @@ const initialState = {
     currentPage:1, // какая страница
     isFetching:true,
     profileFriend:[],
-    followStatus:true,
+    followStatus:false,
     followingInProgress:[],
 }
 const FriendsReducer = (state = initialState,action) => {

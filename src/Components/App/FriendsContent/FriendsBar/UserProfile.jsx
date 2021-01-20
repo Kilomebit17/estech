@@ -3,6 +3,7 @@ import uP from './UserProfile.module.css'
 import sendImg from './send.svg'
 import Preloader from './Preloader'
 const UserProfile = (props) => {
+    debugger
     if (!props.profileFriend) {
         return <Preloader/>
     }

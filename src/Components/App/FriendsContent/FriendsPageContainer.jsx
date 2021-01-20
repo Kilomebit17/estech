@@ -23,7 +23,6 @@ class FriendsPageContainer extends React.Component{
 const mapStateToProps = (state) => {
     return {
         profileFriend:state.FriendsContent.profileFriend,
-        isFetching:state.FriendsContent.isFetching
     }
 }
 const WithUrlDataContainerComponent = withRouter(FriendsPageContainer)

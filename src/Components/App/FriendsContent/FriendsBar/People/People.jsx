@@ -1,7 +1,6 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom'
 import p from './People.module.css'
-import {deleteFollow, postFollow} from "../../../../../API/API";
 const People = (props) => {
     return (
         <div className={p.content}>
