@@ -1,13 +1,15 @@
 import React from 'react'
-import MyProfileCss from './MyProfile.module.css'
-import { NavLink } from 'react-router-dom'
-import img from './img/user.png'
-const MyProfile = () => {
+import css from './MyProfile.module.css'
+import Preloader from "../../FriendsContent/FriendsBar/Preloader";
+import ProfileStatus from './ProfileStatus'
+const MyProfile = (props) => {
+    if (props.isFetching) return <Preloader />
     return (
-        <NavLink to="/profile" activeClassName={MyProfileCss.active} className={MyProfileCss.link}>
-            <img src={img} alt="img" className={MyProfileCss.imgCss}/>
-            <div className={MyProfileCss.txt}></div>
-        </NavLink>
+        <div className={css.mainProfile}>
+            <img src={props.myProfile.photos.large} alt="user-photo"/>
+            <span className={css.fullName}>{props.myProfile.fullName}</span>
+            <ProfileStatus setStatus={props.setStatus} updateStatusThunkCreator={props.updateStatusThunkCreator} status={props.status}/>
+        </div>
     )
 }
 export default MyProfile

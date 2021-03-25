@@ -1,4 +1,4 @@
-import {deleteFollow, getFriends, postFollow, userApi} from "../API/API";
+import {deleteFollow, getFriends, postFollow, userApi,myProfileApi} from "../API/API";
 
 const SEARCH_FRIENDS = 'Search-FriendsBar'
 const FOLLOW = 'FOLLOW'
@@ -9,9 +9,11 @@ const CHANGE_TOTAL_COUNT = 'CHANGE_TOTAL_COUNT'
 const TOGGLE_IS_FETCHING = 'TOGGLE_IS_FETCHING'
 const SET_FRIEND_PROFILE = 'SET_FRIEND_PROFILE'
 const TOGGLE_IS_FOLLOWING = 'TOGGLE_IS_FOLLOWING'
+const GET_MY_PROFILE = 'GET_MY_PROFILE' 
 const initialState = {
     friends: [],
     friendsValue:'',
+    myProfile:[],
     pageSize:5, // сколько людей в друзьях
     totalCount:0,  // сколько всего на сервере
     currentPage:1, // какая страница
@@ -63,9 +65,13 @@ const FriendsReducer = (state = initialState,action) => {
                     :state.followingInProgress.filter(id => id !== action.userId)
             }
         }
+        case GET_MY_PROFILE: {
+            return {...state,myProfile:action.myProfile,isFetching:false}
+        }
     }
     return state
-}
+};
+export const setMyProfile = (myProfile) => ({type:GET_MY_PROFILE,myProfile})
 export const setProfileFriend = (profileFriend) => ({type:SET_FRIEND_PROFILE,profileFriend})
 export const setFriends = (friends) => ({type:FRIENDS, friends})
 export const setFetching = (isFetching) => ({type:TOGGLE_IS_FETCHING, isFetching})
@@ -76,6 +82,7 @@ export const unFollow = (userId) => ({type:UNFOLLOW,userId})
 export const friendsSearchAction = (text) => ({type:SEARCH_FRIENDS, friendsValue: text})
 export const toggleFollowingProgress = (isFetching,userId) => ({type:TOGGLE_IS_FOLLOWING,isFetching,userId})
 
+
 export const getFriendsThunkCreator = (currentPage,pageSize) => { // thunk с замиканием
     return (dispatch) => {
         dispatch(setFetching(true));
@@ -85,7 +92,7 @@ export const getFriendsThunkCreator = (currentPage,pageSize) => { // thunk с з
             dispatch(setTotalCount(data.totalCount));
         })
     }
-}
+};
 export const followThunkCreator = (userId) => { // thunk c follow
     return (dispatch) => {
         dispatch(toggleFollowingProgress(true,userId))
@@ -96,7 +103,7 @@ export const followThunkCreator = (userId) => { // thunk c follow
             dispatch(toggleFollowingProgress(false,userId))
         });
     }
-}
+};
 export const unFollowThunkCreator = (userId) => { // thunk c follow
     return (dispatch) => {
         dispatch(toggleFollowingProgress(true,userId))
@@ -107,7 +114,7 @@ export const unFollowThunkCreator = (userId) => { // thunk c follow
             dispatch(toggleFollowingProgress(false,userId))
         });
     }
-}
+};
 export const getFetchingThunkCreator = (userId) => {
     return (dispatch) => {
         dispatch(setFetching(true));
@@ -116,5 +123,5 @@ export const getFetchingThunkCreator = (userId) => {
             dispatch(setProfileFriend(response.data));
         });
     }
-}
+};
 export default FriendsReducer;

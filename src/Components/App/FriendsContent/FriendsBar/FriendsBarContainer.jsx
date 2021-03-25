@@ -1,5 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
+import { compose } from "redux";
 import {
   getFriendsThunkCreator,
   followThunkCreator,
@@ -7,6 +8,7 @@ import {
 } from "./../../../../Redux/FriendsReducer";
 import FriendsBar from "./FriendsBar";
 import Preloader from "./Preloader";
+// import {withAuthRedirect} from "../../../../HOC/withAuthRedirect";
 class FriendsBarAPI extends React.Component {
   componentDidMount() {
     this.props.getFriendsThunkCreator(this.props.currentPage,this.props.pageSize)
@@ -43,10 +45,11 @@ const mapStateToProps = (state) => {
     followStatus:state.FriendsContent.followStatus,
   };
 };
-
-const FriendsBarContainer = connect(mapStateToProps, {
+// let friendsRedirect = withAuthRedirect(FriendsBarAPI)
+export default compose(
+  // withAuthRedirect,
+  connect(mapStateToProps, {
   getFriendsThunkCreator,
   followThunkCreator,
   unFollowThunkCreator
-})(FriendsBarAPI);
-export default FriendsBarContainer;
+}))(FriendsBarAPI)

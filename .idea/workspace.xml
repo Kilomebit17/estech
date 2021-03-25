@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="1f446376-3c01-4d71-a051-e2a846eafe37" name="Default Changelist" comment="create render and does something with props">
       <change afterPath="$PROJECT_DIR$/src/Components/App/Content/Login/Login.jsx" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Components/App/Content/Login/Login.module.css" afterDir="false" />
@@ -20,6 +21,9 @@
       <change beforePath="$PROJECT_DIR$/src/Redux/FriendsReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/FriendsReducer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Redux/authReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Redux/authReducer.js" afterDir="false" />
     </list>
+=======
+    <list default="true" id="1f446376-3c01-4d71-a051-e2a846eafe37" name="Default Changelist" comment="create render and does something with props" />
+>>>>>>> master
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -234,6 +238,13 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="javascript">
+<<<<<<< HEAD
+=======
+          <url>file://$PROJECT_DIR$/src/Components/App/MessageBar/MessagePeople/DialoguesUsers/UserPhoto/UserPhoto.jsx</url>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+>>>>>>> master
           <url>file://$PROJECT_DIR$/src/Components/App/Content/MessageBody/MessageSend/SendInfo/SendGif.jsx</url>
           <option name="timeStamp" value="3" />
         </line-breakpoint>

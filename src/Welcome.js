@@ -6,7 +6,7 @@ import Sign from './Components/Welcome/Sign/Sign';
 import {NavLink} from "react-router-dom";
 function Welcome() {
   return (
-      <NavLink to='/Welcome'>
+      <NavLink to='/welcome'>
         <div className="App__bg">
           <div className={H.header__inner}>
             <Header/>

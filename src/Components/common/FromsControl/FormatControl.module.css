@@ -1,0 +1,10 @@
+.form {
+     border: 2px solid red;
+}
+.spanError {
+     color: red;
+     font-size: 1.2rem;
+}
+.passErr {
+     border: 1px solid red;
+}

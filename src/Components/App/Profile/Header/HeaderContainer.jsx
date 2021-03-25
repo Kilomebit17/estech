@@ -1,19 +1,25 @@
 import React from "react";
 import Header from "./Header";
 import { connect } from "react-redux";
-import {getAuthThunkCreator, setAuthData} from '../../../../Redux/authReducer'
+import { getAuthThunkCreator } from "../../../../Redux/authReducer";
+import { withAuthRedirect } from "../../../../HOC/withAuthRedirect";
+import { compose } from "redux";
 class HeaderContainer extends React.Component {
   componentDidMount() {
-    this.props.getAuthThunkCreator()
+    this.props.getAuthThunkCreator();
   }
   render() {
-    return (
-      <Header {...this.props}/>
-  )
+    return <Header {...this.props} />;
+  }
 }
-}
-const mapStateToProps = (state) => ({
-    isAuth:state.auth.isAuth,
-    login:state.auth.login,
-})
-export default connect(mapStateToProps,{setAuthData,getAuthThunkCreator})(HeaderContainer);
+const mapStateToProps = (state) => {
+  return {
+    login: state.auth.login,
+    isAuth:state.auth.isAuth
+  };
+};
+
+export default compose(
+  connect(mapStateToProps, { getAuthThunkCreator }),
+  // withAuthRedirect,
+)(HeaderContainer);

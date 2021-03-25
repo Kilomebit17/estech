@@ -7,15 +7,14 @@ const mapStateToProps = (state) => {
         MessagesContent: state.MessagesContent
     }
 }
-const mapDispatchToProps = (dispatch) => {
-    return {
-        sendMessageAction: () => {
-            dispatch(sendMessageAction())
-        },
-        onWrite: (text) => {
-            dispatch(onWriteAction(text))
-        }
-    }
-}
-const SendAreaContainer = connect(mapStateToProps, mapDispatchToProps)(SendArea)
-export default SendAreaContainer;
+// const mapDispatchToProps = (dispatch) => {
+//     return {
+//         sendMessageAction: () => {
+//             dispatch(sendMessageAction())
+//         },
+//         onWrite: (text) => {
+//             dispatch(onWriteAction(text))
+//         }
+//     }
+// }
+export default connect(mapStateToProps, {sendMessageAction,onWriteAction})(SendArea)

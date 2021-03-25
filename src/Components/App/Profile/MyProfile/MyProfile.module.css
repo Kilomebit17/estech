@@ -1,23 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
-.link {
-    opacity: .6;
+.aboutMe {
+    margin: 0;
+    padding: 0;
+    display: block;
 }
-/*.Couples__title a.active {*/
-/*    padding-bottom: 3px;*/
-/*    border-bottom: 3px solid#fb4a54;*/
-/*}*/
-.imgCss {
-    width: 35px;
-    height: 31px;
+.mainProfile {
+    display: flex;
+    margin:20px 50px;
+    flex-direction: column;
 }
-.active {
-    opacity: 1;
-}
-.txt {
+.fullName {
     font-size: 2rem;
-    cursor: pointer;
-    font-family: 'Bahiana', cursive;
-    letter-spacing: 5px;
     color: #fff;
-
 }

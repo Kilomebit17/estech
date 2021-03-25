@@ -9,16 +9,19 @@ import FriendsPageContainer from "./Components/App/FriendsContent/FriendsPageCon
 import FriendsPage from './Components/App/FriendsContent/FriendsPage';
 import MessageBarContainer from "./Components/App/MessageBar/MessageBarContainer";
 import Login from "./Components/App/Content/Login/Login";
+import MyProfileContainer from './Components/App/Profile/MyProfile/MyProfileContainer';
 const App = () => {
     return (
-        <div className={ProfileCss.profile__width}>
-            <Route render={() => <SideBar />} />
-            <Route path='/messages/' render={() => <MessageBarContainer />} />
-            <Route path='/messages/people' render={() => <Content/>} />
-            <Route path='/friends' render={() => <FriendsPage />} />
-            <Route path='/login' render={() => <Login />} />
-            <Route path='/profile/:userId?' render={() => <FriendsPageContainer />} />
-
+        <div className='app'>
+            <div className={ProfileCss.profile__width}>
+                <Route render={() => <SideBar />} />
+                <Route path='/messages/' render={() => <MessageBarContainer />} />
+                <Route path='/messages/people' render={() => <Content/>} />
+                <Route path='/friends' render={() => <FriendsPage />} />
+                <Route path='/login' render={() => <Login />} />
+                <Route path='/profile/:userId?' render={() => <FriendsPageContainer />} />
+                <Route path='/my-profile' render={() => <MyProfileContainer />} />
+            </div>
         </div>
 )
 }

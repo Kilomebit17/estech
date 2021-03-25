@@ -12,6 +12,23 @@ export const userApi = (userId) => {
     return instance.get(`profile/${userId}`)
 
 }
+
+// status
+export const getStatus = (userId) => {
+    return instance.get('profile/status/' + userId)
+}
+export const updateStatus = (status) => {
+    return instance.put('profile/status',{status:status})
+}
+//
+export const postLogin = () => {
+    return instance.post('auth/login')
+}
+
+
+export const myProfileApi = () => {
+    return instance.get(`profile/2`)
+}
 export const getAuth = () => {
     return instance.get('auth/me')
 }
